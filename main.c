@@ -3,5 +3,13 @@
 int main()
 {
   printf("Hello, world\n");
-  return 0;
+  waitForButtonPush(0);
+  if (switchState(1) == 1)
+  {
+    doMaze();
+  }
+  else
+  {
+    doSumo();
+  }
 }
